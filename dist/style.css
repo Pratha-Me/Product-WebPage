@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html{
+  font-family: 'Montserrat', sans-serif;  
+  background-color: rgb(225,251,235);
+}
+
+body {
+  min-height:100%; 
+  position: relative;
+  overflow: auto; 
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 10px;
+  max-height: 50px;
+  padding: 0 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(234,230,255);
+  z-index:10;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+nav {
+  margin-left: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 50px;
+}
+
+#nav-bar > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li > a {
+  display: block;
+  padding: 8px;
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li > a:hover, a:active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+main{
+  padding: auto;
+  margin-top: 0px;
+  width: 100%;
+  z-index: 5;
+  overflow: auto;
+}
+
+.topSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.custom-button {
+  width: 100px;
+  padding: 5px 10px 5px;
+  color: white;
+  background: chocolate;
+  position: relative;
+  float:center;
+  margin:10px auto;
+  border:2px solid orange;
+  border-radius: 4px;
+}
+
+.custom-button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+#Head > h2 {
+  margin-bottom: 20px;
+  color: chocolate;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 5px 5px 5px;
+}
+
+#features {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  max-width: 75%;
+  margin: auto;
+  align-items: center;
+}
+
+#featuresNext {
+  display: flex;
+  flex-direction: row;
+  max-width: 75%;
+  margin: auto;
+  align-items: center;
+}
+
+#features > .dummyText_one {
+  display: block;
+  margin-left: 65px;
+}
+
+#featuresNext > .dummyText_one {
+  display: block;
+  margin-left: 75px;
+}
+
+.dummyText_one > p{
+  position: relative;
+  top: -10px;
+  color: black;
+}
+
+.dummyText_one > h3{
+  color: chocolate;
+}
+
+#VideoSection{
+  margin: 0px auto 0px;
+  width: 50%;
+}
+
+#VideoSection #video{
+    padding: 100px 50px 0px;
+}
+
+#pricing{
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  padding-left: 130px;
+  padding-top: 100px;
+  width: 80%;
+}
+
+div.gallery {
+  margin: 0px 20px 50px;
+  padding: 25px 50px 0px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+  height: 200px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery a > img {
+  padding: 0px 15px 0px;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer{
+  display:block;
+  position:relative;
+  bottom:0;
+  width:100%;
+  height:5em; /*Footer Height*/
+  background:rgb(234,230,255);
+}
+
+footer > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+footer ul li > a{
+  text-decoration: none;
+  color: black;
+}
+
+footer > ul > li {
+  margin: 5px 10px 5px;
+}
+
+footer > span {
+  margin: -10px 10px 5px;
+  display: block;
+  float: right;
+  font-size: .8em;
+  color: olive;
+}
